@@ -1,0 +1,70 @@
+메모장
+
+Document Object Model 
+
+Element 우리가 보는 것들
+
+Dom 은 컴퓨터가 이해하는 원형이다
+
+Dom은 논리 트리 
+
+순수 자바스크립트 = 바닐라 
+-특정 라이브러리나 프레임워크를 사용하지 않는 그 자체의 자바스크립트를 말합니다.
+
+W3schools.com에 들어가면 play ground = sand box 가 있습니다.
+
+codesandbox를 이용할 것입니다.
+
+CDN : 웹에서 사용되는 다양한 컨텐츠 리소스를 저장하여 제공하는 시스템
+
+react document CDN  - 검색
+
+
+React 에서 props를 남기지 않고 작성할 수 있음
+
+React.createElment ("h1", null , "hellow world");
+
+1.React.createElement(
+    type,  <- h1
+    [props], <- null 
+    [...children] <- string
+)
+props다음에 children을 작성하면 props의 값들이 출력 되지 않는다
+children은 한개만 넣을 수 있는 것이 아니라 여러가지를 넣을 수 있다.
+
+2.ReactDOM.render(
+    element,
+    container[,callbakc] <-callback 값은 안넣어도 됨
+)
+==> element 를 container에게 주입한다는 용어 이다 .
+
+
+==================================================================
+
+JSX 와 Bable (JSX 다루기)
+
+JSX란?
+-문자도 HTML도 아닌 JavaScript의 확장 문법이다.
+const element = <h1>Hello, world!</h1>;
+
+코드 샌드박스에서 jsx를 사용하려면 Bable이 필요 합니다.
+
+바벨은 자바스크립트 컴파일러라고 해서 특정언어를 다른 프로그래밍 언어로 옮기는 언어로
+
+JSX 를 자바스크립트도 이해할수 있는 자바스크립트 언어로 옮긴다 
+= JSX 를 React언어로 바꾸는 컴파일러라고 보면됩니다.
+
+자바스크립트는 JSX를 이해할 수 없습니다
+
+babel의 cdn링크를 사용 하기 위해서는
+ https://unpkg.com/@babel/standalone/babel.min.js
+이거를 사용 하면 됩니다
+
+여기서 unpkg은 npm환경에서도 동작이 가능하게 해주는 것입니다.
+---------------------
+JSX는 모든 것을 변수화 할 수 있습니다.
+
+Spread연산자란? 
+childredn= {text}를  -> ...
+객체를 모두 분해해서 보여주는 방법
+{...props}
